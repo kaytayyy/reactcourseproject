@@ -1,88 +1,106 @@
 const api = "https://picsum.photos/200"
-const apiSpecific = "https://picsum.photos/id/ "
-const Users = [
+const apiSpecific = api + Math.random() + "/200"
+
+fetch(apiSpecific, {
+    method: "GET",
+    headers: {
+        "Content-Type": "application/json",
+    },
+})
+    .then(response => response.json())
+    .then(data => {
+        // Do something with the data
+        console.log(data);
+    })
+    .catch(error => {
+        console.error("Fetch error:", error);
+    });
+
+export const Users = [
     {
-        id:1,
-        profilepic: "src/Photos/KatiePfp.jpg",
+        id: 1,
+        profilePicture: "src/Photos/KatiePfp.jpg",
         username: "Katie Smith"
     },
     {
-        id:2,
-        profilepic: "src/Photos/AaronPfp.jpg",
+        id: 2,
+        profilePicture: "src/Photos/AaronPfp.jpg",
         username: "Aaron Woodman"
     },
     {
-        id:3,
-        profilepic: "src/Photos/MeghanPfp.jpg",
+        id: 3,
+        profilePicture: "src/Photos/MeghanPfp.jpg",
         username: "Meghan Glinski"
     },
     {
-        id:4,
-        profilepic: "src/Photos/GunnerPfp.jpg",
+        id: 4,
+        profilePicture: "src/Photos/GunnerPfp.jpg",
         username: "Gunner Smith"
     },
     {
-        id:5,
-        profilepic: "src/Photos/DannyPfp.jpg",
+        id: 5,
+        profilePicture: "src/Photos/DannyPfp.jpg",
         username: "Danny Megard"
     },
     {
-        id:6,
-        profilepic: "src/Photos/JaxPfp.JPG",
+        id: 6,
+        profilePicture: "src/Photos/JaxPfp.JPG",
         username: "Jax Smith"
     }
 ]
 
-const Posts = [
+export const Posts = [
     {
-        id:1,
-        desc:"Look at this!",
-        photo: "",
+        id: 1,
+        desc: "Look at this!",
+        photo: apiSpecific,
         date: "10 mins ago",
-        userId:1,
+        userId: 1,
         likes: 12,
-        comments:3
+        comments: 3
     },
     {
-        id:2,
+        id: 2,
         desc: "Stay strong, I whispered to my wifi signal",
-        photo: "",
+        photo: apiSpecific,
         date: "35 mins ago",
-        userId:2,
+        userId: 2,
         likes: 19,
         comments: 1
     },
     {
-        id:3,
+        id: 3,
         desc: "Embrace the glorious mess that you are",
-        photo: "",
+        photo: apiSpecific,
         date: "1 hour ago",
-        userId:3,
+        userId: 3,
         likes: 26,
         comments: 2
     },
     {
-        id:4,
+        id: 4,
         desc: "Mentally here",
-        photo: "",
+        photo: apiSpecific,
         date: "2 hours ago",
-        userId:4,
+        userId: 4,
         likes: 19,
         comments: 1
     },
-    {   id:5,
+    {
+        id: 5,
         desc: "The bags under my eyes are Gucci",
-        photo: "",
+        photo: apiSpecific,
         date: "3 hours ago",
-        userId:5,
+        userId: 5,
         likes: 19,
         comments: 1
     },
-    {   id:6,
+    {
+        id: 6,
         desc: "Be kind and full of love",
-        photo: "",
+        photo: apiSpecific,
         date: "3 hours ago",
-        userId:6,
+        userId: 6,
         likes: 19,
         comments: 1
     }

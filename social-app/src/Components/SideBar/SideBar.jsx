@@ -1,5 +1,7 @@
 import React from "react";
 import "./SideBar.css";
+import {Users} from "../DummyData.js";
+import CloseFriend from "../CloseFriends/CloseFriends.jsx";
 
 function Sidebar() {
     return (
@@ -23,39 +25,9 @@ function Sidebar() {
                 <hr className="sidebarHr"/>
                 <li className="friendFavorites">Favorites:</li>
                 <ul className="sidebarFriendList">
-                    <li className="sidebarFriend">
-                        <span className="sidebarFriendName">Meghan Glinski</span>
-                    </li>
-                    <li className="sidebarFriend">
-                        <span className="sidebarFriendName">Aaron Woodman</span>
-                    </li>
-                    <li className="sidebarFriend">
-                        <span className="sidebarFriendName">Jasmine White</span>
-                    </li>
-                    <li className="sidebarFriend">
-                        <span className="sidebarFriendName">Abby Guffey</span>
-                    </li>
-                    <li className="sidebarFriend">
-                        <span className="sidebarFriendName">Danny Megard</span>
-                    </li>
-                    <li className="sidebarFriend">
-                        <span className="sidebarFriendName">Zack Fisher</span>
-                    </li>
-                    <li className="sidebarFriend">
-                        <span className="sidebarFriendName">Anna Smith</span>
-                    </li>
-                    <li className="sidebarFriend">
-                        <span className="sidebarFriendName">Griffin Smith</span>
-                    </li>
-                    <li className="sidebarFriend">
-                        <span className="sidebarFriendName">Bella White</span>
-                    </li>
-                    <li className="sidebarFriend">
-                        <span className="sidebarFriendName">Jax Smith</span>
-                    </li>
-                    <li className="sidebarFriend">
-                        <span className="sidebarFriendName">Gunner Smith</span>
-                    </li>
+                    {Users.map(u =>(
+                        <CloseFriend key={u.id} user={u}/>
+                    ))}
                 </ul>
             </div>
         </div>
