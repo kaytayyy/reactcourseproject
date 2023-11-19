@@ -24,7 +24,7 @@ function Sidebar() {
                 <li className="friendFavorites">Favorites:</li>
                 <ul className="sidebarFriendList">
                     <li className="sidebarFriend">
-                        <span className="sidebarFriendName">Meghan Glinkski</span>
+                        <span className="sidebarFriendName">Meghan Glinski</span>
                     </li>
                     <li className="sidebarFriend">
                         <span className="sidebarFriendName">Aaron Woodman</span>
