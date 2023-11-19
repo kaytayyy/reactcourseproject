@@ -1,0 +1,44 @@
+.profile {
+    display: flex;
+    background-color: grey;
+}
+
+.profileRight {
+    flex: 9;
+}
+
+.profileCover {
+    height: 320px;
+    position: relative;
+}
+
+.profileUserImg {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: absolute;
+    align-items: center;
+    top: 50px;
+    justify-content: center;
+    border: 3px solid black;
+}
+
+.profileInfo {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+}
+
+.profileInfoName {
+    font-size: 24px;
+}
+
+.profileInfoDesc {
+    font-weight: 300;
+    margin-bottom: 50px;
+}
+
+.profileRightBottom {
+    display: flex;
+}
