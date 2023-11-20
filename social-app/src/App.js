@@ -16,15 +16,15 @@ function App() {
 const router = createBrowserRouter([
   {
       path: "/home",
-      element: <Home />,
+      element: <Home className="homeEl" />,
   },
   {
       path: "/profile",
-      element: <Profile />,
+      element: <Profile className="profileEl"/>,
   },
   {
       path: "/login",
-      element: <Login />,
+      element: <Login className="loginEl"/>,
   },
 ]);
 const root = ReactDOM.createRoot(document.getElementById("root"));

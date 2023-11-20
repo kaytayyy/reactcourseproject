@@ -11,11 +11,14 @@ function NavBar() {
 
     return (
         <nav>
-            <a href="/movies" onClick={navigate}>
+            <a href="/home" onClick={navigate}>
                 Home
             </a>
-            <a href="/about" onClick={navigate}>
+            <a href="/profile" onClick={navigate}>
                 Profile
+            </a>
+            <a href="/login" onClick={navigate}>
+                Log In
             </a>
         </nav>
     );
