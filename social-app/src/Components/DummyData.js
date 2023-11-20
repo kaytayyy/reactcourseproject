@@ -1,20 +1,21 @@
-const api = "https://picsum.photos/200"
-const apiSpecific = api + Math.random() + "/200"
+const api = "http://localhost:3500/photos/"
+const randomWholeNumber = (Math.floor(Math.random() * 6));
+const apiSpecific = api + randomWholeNumber
 
-fetch(apiSpecific, {
-    method: "GET",
-    headers: {
-        "Content-Type": "application/json",
-    },
-})
-    .then(response => response.json())
-    .then(data => {
-        // Do something with the data
-        console.log(data);
-    })
-    .catch(error => {
-        console.error("Fetch error:", error);
-    });
+// fetch(apiSpecific, {
+//     method: "GET",
+//     headers: {
+//         "Content-Type": "application/json",
+//     },
+// })
+//     .then(response => response.json())
+//     .then(data => {
+//         // Do something with the data
+//         console.log(data);
+//     })
+//     .catch(error => {
+//         console.error("Fetch error:", error);
+//     });
 
 export const Users = [
     {

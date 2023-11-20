@@ -1,0 +1,32 @@
+{
+    "photos":[
+    {
+        "id": 0,
+        "address":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMqT0tazxSgHu1HChJf0CBYbsFBTTd38LYCiUwzPCoQqcK-Gn3igHVafHJgNGC9ZN71iQ&usqp=CAU"
+    },
+    {
+        "id": 1,
+        "address": "https://images.unsplash.com/photo-1503614472-8c93d56e92ce?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+        "id": 2,
+        "address":"https://images.pexels.com/photos/1450082/pexels-photo-1450082.jpeg?cs=srgb&dl=pexels-marlon-martinez-1450082.jpg&fm=jpg"
+    },
+    {
+        "id": 3,
+        "address": "https://cdn.shopify.com/s/files/1/3026/6974/files/happy-alpacas-landscape_1024x1024.jpg?v=1532619630"
+    },
+    {
+        "id": 4,
+        "address": "https://llandscapes-10674.kxcdn.com/wp-content/uploads/2017/04/1.jpg"
+    },
+    {
+        "id": 5,
+        "address": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSanjSqwfjzt6rQ2zEO9EasIXrkqk2wqtPmw&usqp=CAU"
+    },
+    {
+        "id": 6,
+        "address": "https://amateurphotographer.com/wp-content/uploads/sites/7/2023/10/feature75197_0_-Mik-Dogherty.jpg?w=435&h=350&crop=1"
+    }
+]
+}

@@ -8,9 +8,14 @@ import {
   Switch,
   Route
 } from "react-router-dom"
+import { ErrorBoundary } from 'react';
 import ReactDOM from "react-dom/client";
-// Step 1. Import react-router functions
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+
+document.addEventListener("DOMContentLoaded", (event) => {
+  console.log("DOM fully loaded and parsed");
+});
+
 function App() {
 
 const router = createBrowserRouter([
