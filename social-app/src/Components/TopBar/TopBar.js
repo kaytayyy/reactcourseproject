@@ -1,5 +1,6 @@
 import React from "react";
 import './TopBar.css';
+import NavBar from "../NavBar";
 
 
 const logo = 'public/logo512.png';
@@ -17,9 +18,9 @@ function TopBar() {
             </div>
             <div className="topbarRight">
                 <div className="topbarLinks">
-                    <span className="topbarLink">Likes</span>
-                    <span className="topbarLink">Home</span>
-                    <span className="topbarLink">Profile</span>
+                    <NavBar className="navBar"/>
+                    {/* <span className="topbarLink">Home</span>
+                    <span className="topbarLink">Profile</span> */}
                 </div>
                 
             </div>
