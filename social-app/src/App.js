@@ -38,6 +38,6 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(<RouterProvider router={router} />);
 }
 
-
+// json-server --watch db.json ./src/db.json --port 3500
 
 export default App;

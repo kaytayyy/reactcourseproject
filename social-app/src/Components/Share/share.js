@@ -1,6 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import "../Share/Share.css"
 
+
+function Share() {
+    const [inputValue, setInputValue] = useState("");
+    const [postData, setPostData] = useState(null);
 
 function postFetch() {
     let url = 'http://localhost:3500/photos'
@@ -13,31 +17,26 @@ fetch(url, {
         'Content-Type': 'application/json',
     },
     body: JSON.stringify({
-        url: document.getElementsByClassName('shareInput').value
+        url: inputValue,
     })
 })
-.then(res => res.json());
-.then(data => {console.log(document.getElementsByClassName('shareInput').value)})
+.then(res => res.json())
+.then(data => {
+    console.log(inputValue, data);
+    console.log('success:', data);
+    setPostData(data);
+})
+.catch(error => {
+    console.error('error:', error);
+})
+}
 
-// function postData() {
-//     postFetch()
-//     .then(data => {
-//         console.log('succsess:', data);
-//     })
-//     .catch(error => {
-//         console.error('error:', error);
-//     })
-// }
-
-
-function Share() {
-    
     return (
         <div className="share">
             <div className="shareWrapper">
                 <div className="shareTop">
-                <img className="shareProfileImg" src="src/Photos/JaxPfp.JPG"></img>
-                <input placeholder="What's going on in that noggin of yours?" className="shareInput"></input>
+                <img className="shareProfileImg" src="src/Photos/JaxPfp.JPG" alt="Profile Image"></img>
+                <input placeholder="What's going on in that noggin of yours?" className="shareInput" value={inputValue} onChange={(e) => setInputValue(e.target.value)}></input>
                 </div>
                 <hr className="shareHr"></hr>
                 <div className="shareBottom">
@@ -53,6 +52,9 @@ function Share() {
                         </div>
                     </div>
                     <button onClick={ () => postFetch() } className="shareButton">Share</button>
+                    {postData && ( 
+                    <p>{postData.url}</p>
+                        )}   
                 </div>
             </div>
         </div>
