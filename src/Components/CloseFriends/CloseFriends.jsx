@@ -1,6 +1,6 @@
 import React from "react";
-import "../CloseFriends/CloseFriends.css"
-import {Users} from "../DummyData.js"
+import "./CloseFriends.css"
+// import {Users} from "../DummyData.js"
 
 function CloseFriend({user}) {
     return (

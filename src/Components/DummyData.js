@@ -2,21 +2,6 @@ const api = "http://localhost:3500/photos/"
 const randomWholeNumber = (Math.floor(Math.random() * 6));
 const apiSpecific = api + randomWholeNumber
 
-// fetch(apiSpecific, {
-//     method: "GET",
-//     headers: {
-//         "Content-Type": "application/json",
-//     },
-// })
-//     .then(response => response.json())
-//     .then(data => {
-//         // Do something with the data
-//         console.log(data);
-//     })
-//     .catch(error => {
-//         console.error("Fetch error:", error);
-//     });
-
 export const Users = [
     {
         id: 1,
@@ -106,3 +91,5 @@ export const Posts = [
         comments: 1
     }
 ]
+
+export default Posts;

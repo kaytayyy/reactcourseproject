@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../Share/Share.css"
+import "./Share.css"
 
 
 function Share() {
@@ -35,7 +35,7 @@ fetch(url, {
         <div className="share">
             <div className="shareWrapper">
                 <div className="shareTop">
-                <img className="shareProfileImg" src="src/Photos/JaxPfp.JPG" alt="Profile Image"></img>
+                <img className="shareProfileImg" src="src/Photos/JaxPfp.JPG" alt="Profile"></img>
                 <input placeholder="What's going on in that noggin of yours?" className="shareInput" value={inputValue} onChange={(e) => setInputValue(e.target.value)}></input>
                 </div>
                 <hr className="shareHr"></hr>

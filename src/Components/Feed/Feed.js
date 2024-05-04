@@ -2,15 +2,16 @@ import React from "react";
 import "./Feed.css";
 import Share from "../Share/share.js";
 import Post from "../Post/Post.jsx";
-import {Posts} from "../DummyData.js"
 
-function Feed() {
+function Feed({ photos }) {
     return (
         <div className="feed">
-            <div className="feedWrapper"></div>
+            <div className="feedWrapper">
+                {/* <div key={post1}></div> */}
+            </div>
             <Share/>
-            {Posts.map(p=>(
-            <Post key={p.id} post={p}/>
+            {photos.map(photo=>(
+            <Post key={photo.id} post={photo}/>
             ))}
         </div>
     )

@@ -1,6 +1,6 @@
 // import React from "react";
 
-let likeFavortied = false;
+// let  = false;
 // function LikeBtn() {
 //     const
 //         isFavorited = !isFavorited

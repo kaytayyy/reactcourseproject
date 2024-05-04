@@ -1,7 +1,7 @@
 import React from "react";
 import './TopBar.css';
 import NavBar from "../NavBar";
-import Home from "../Home/Home";
+import Home from "../Home/Home.js";
 import Profile from "../Profile/Profile";
 import Login from "../login/login";
 
@@ -22,9 +22,9 @@ function TopBar() {
             <div className="topbarRight">
                 <div className="topbarLinks">
                     <NavBar className="navBar">
-                        {/* <button href={Home}>Home</button>
+                        <button href={Home}>Home</button>
                         <button href={Profile}>Profile</button>
-                        <button href={Login}>Log in</button> */}
+                        <button href={Login}>Log in</button>
                     </NavBar>
                     {/* <span className="topbarLink">Home</span>
                     <span className="topbarLink">Profile</span> */}
